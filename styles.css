@@ -7,6 +7,10 @@
 body{
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+    color:white;
+}
 .header{
     width:100%;
     height:4rem;
@@ -15,6 +19,10 @@ body{
     grid-template-columns: 10fr 1fr 1fr;
     background-color: black;
     color:white;
+}
+.cart-container-div{
+    display: flex;
+    width: 100%;
 }
 .cart-container{
     display:grid;

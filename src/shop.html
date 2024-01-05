@@ -3,49 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galari</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <title>GALARI SHOP</title>
+    <link rel="stylesheet" href="./Css/shopstyles.css"/>
+
 </head>
 <body>
     <header>
         <div class="header">
             <p class="logo">GALARI</p>
-            <div class="cart-container">
-                <a href="./src/cart.html" class="cart-container">
+            <div class="cart-container-div">
+                <a href="./cart.html" class="cart-container">
                     <p class="cart">CART</p>
                     <p class="cart-count">0</p>
                 </a>
             </div>
-            <a href="/src/shop.html" class="menu">SHOP</a>
+            <a href="/index.html" class="menu">HOME</a>
         </div>
     </header>
-    <section class="section-1">
-        <div class="left-container">
-            <h1 class="new">NEW</h1>
-            <img src="https://images.pexels.com/photos/2315196/pexels-photo-2315196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"class="img1"/>
-        </div>
-        <div class="right-container">
-                <h1 class="headliner"><a href="./src/shop.html"><button class="viewmore-btn">VIEW MORE</button></a> SPORT<br/>COLLECTION</h1>
-                <div class="lower-right-container">            
-                    <div class="img2-container">
-                        <img src="https://images.pexels.com/photos/2072454/pexels-photo-2072454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"class="img2"/> 
-                    </div>
-                    <div class="description">
-                        <P>The brand was orginally made at men's fashion. Starting in 1995, fashion was in all its dimensions befin the myself urban lines the more causal.</P> 
-                        <i class="bi bi-arrow-down"></i>
-                    </div>
-                </div>
-        </div>
-    </section>
-    <section class="section-2">
-        <div class="video-container">
-            <video class="video1" autoplay="true" loop="true">
-                <source src="pexels-yaroslav-shuraev-8028441 (Original).mp4" type="video/mp4" />
-            </video>
-        </div>
-    </section>
     <section class="section-3">
-        <h1 class="section-3-liner">SALES</h1>
+        <h1 class="section-3-liner">SHOP</h1>
         <div class="products-container">
             <div class="product">
                 <img class="product-img" src="https://cyber-techwear.com/cdn/shop/products/Cargo-Pants-Function-Streetwear-front.jpg?v=1648080706"/>
@@ -70,7 +46,7 @@
                             <p class="price">$36.98</p>
                         </div>
                     </div>
-                    <i class="bi bi-plus" onclick="addToCart(this, 2);"></i>
+                    <i class="bi bi-plus" onclick="addToCart(this, 2); "></i>
                 </div>
             </div>
             <div class="product">
@@ -83,7 +59,20 @@
                             <p class="price">$34.80</p>
                         </div>
                     </div>
-                    <i class="bi bi-plus" onclick="addToCart(this, 3);"></i>
+                    <i class="bi bi-plus" onclick="addToCart(this, 3); "></i>
+                </div>
+            </div>
+            <div class="product">
+                <img  class="product-img" src="https://flavnt.com/cdn/shop/products/dogoodsoc.jpg?v=1673671478&width=713"/>
+                <div class="price-info">
+                    <div>
+                        <p class="product-title">DO GOOD SOCIAL CLUB TEE</p>
+                        <div class="prices">
+                            <p class="old-price">$38.80</p>
+                            <p class="price">$34.80</p>
+                        </div>
+                    </div>
+                    <i class="bi bi-plus" onclick="addToCart(this, 4);"></i>
                 </div>
             </div>
         </div>
