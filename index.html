@@ -1,93 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galari</title>
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <p class="logo">GALARI</p>
-            <div class="cart-container">
-                <a href="./src/cart.html" class="cart-container">
-                    <p class="cart">CART</p>
-                    <p class="cart-count">0</p>
-                </a>
-            </div>
-            <a href="/src/shop.html" class="menu">SHOP</a>
+      <div class="header">
+        <p class="logo">GALARI</p>
+        <div class="cart-container">
+          <a href="./src/cart.html" class="cart-container">
+            <p class="cart">CART</p>
+            <p class="cart-count">0</p>
+          </a>
         </div>
+        <a href="./src/shop.html" class="menu">SHOP</a>
+      </div>
     </header>
     <section class="section-1">
-        <div class="left-container">
-            <h1 class="new">NEW</h1>
-            <img src="https://images.pexels.com/photos/2315196/pexels-photo-2315196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"class="img1"/>
+      <div class="left-container">
+        <h1 class="new">NEW</h1>
+        <img
+          src="https://images.pexels.com/photos/2315196/pexels-photo-2315196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="img1"
+        />
+      </div>
+      <div class="right-container">
+        <h1 class="headliner">
+          <a href="./src/shop.html"
+            ><button class="viewmore-btn">VIEW MORE</button></a
+          >
+          SPORT<br />COLLECTION
+        </h1>
+        <div class="lower-right-container">
+          <div class="img2-container">
+            <img
+              src="https://images.pexels.com/photos/2072454/pexels-photo-2072454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="img2"
+            />
+          </div>
+          <div class="description">
+            <p>
+              The brand was orginally made at men's fashion. Starting in 1995,
+              fashion was in all its dimensions befin the myself urban lines the
+              more causal.
+            </p>
+            <i class="bi bi-arrow-down"></i>
+          </div>
         </div>
-        <div class="right-container">
-                <h1 class="headliner"><a href="./src/shop.html"><button class="viewmore-btn">VIEW MORE</button></a> SPORT<br/>COLLECTION</h1>
-                <div class="lower-right-container">            
-                    <div class="img2-container">
-                        <img src="https://images.pexels.com/photos/2072454/pexels-photo-2072454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"class="img2"/> 
-                    </div>
-                    <div class="description">
-                        <P>The brand was orginally made at men's fashion. Starting in 1995, fashion was in all its dimensions befin the myself urban lines the more causal.</P> 
-                        <i class="bi bi-arrow-down"></i>
-                    </div>
-                </div>
-        </div>
+      </div>
     </section>
     <section class="section-2">
-        <div class="video-container">
-            <video class="video1" autoplay="true" loop="true">
-                <source src="src/Assets/video.mp4" type="video/mp4" />
-            </video>
-        </div>
+      <div class="video-container">
+        <video class="video1" autoplay="true" loop="true">
+          <source src="src/Assets/video.mp4" type="video/mp4" />
+        </video>
+      </div>
     </section>
     <section class="section-3">
-        <h1 class="section-3-liner">SALES</h1>
-        <div class="products-container">
-            <div class="product">
-                <img class="product-img" src="https://cyber-techwear.com/cdn/shop/products/Cargo-Pants-Function-Streetwear-front.jpg?v=1648080706"/>
-                <div class="price-info">
-                    <div >
-                        <p class="product-title">PELICAN BLACK PANTS</p>
-                        <div class="prices">
-                            <p class="old-price">$65.99</p>
-                            <p class="price">$45.99</p>
-                        </div>
-                    </div>
-                    <i class="bi bi-plus" onclick="addToCart(this, 1);"></i>
-                </div>
+      <h1 class="section-3-liner">SALES</h1>
+      <div class="products-container">
+        <div class="product">
+          <img
+            class="product-img"
+            src="https://cyber-techwear.com/cdn/shop/products/Cargo-Pants-Function-Streetwear-front.jpg?v=1648080706"
+          />
+          <div class="price-info">
+            <div>
+              <p class="product-title">PELICAN BLACK PANTS</p>
+              <div class="prices">
+                <p class="old-price">$65.99</p>
+                <p class="price">$45.99</p>
+              </div>
             </div>
-            <div class="product">
-                <img  class="product-img" src="https://www.alanic.clothing/v1/wp-content/uploads/2021/04/men-fashion-casual-streetwear-t-shirt.jpg"/>
-                <div class="price-info">
-                    <div>
-                        <p class="product-title">STAY FREE TEE</p>
-                        <div class="prices">
-                            <p class="old-price">$41.98</p>
-                            <p class="price">$36.98</p>
-                        </div>
-                    </div>
-                    <i class="bi bi-plus" onclick="addToCart(this, 2);"></i>
-                </div>
-            </div>
-            <div class="product">
-                <img  class="product-img" src="https://flavnt.com/cdn/shop/products/dogoodsoc.jpg?v=1673671478&width=713"/>
-                <div class="price-info">
-                    <div>
-                        <p class="product-title">DO GOOD SOCIAL CLUB TEE</p>
-                        <div class="prices">
-                            <p class="old-price">$38.80</p>
-                            <p class="price">$34.80</p>
-                        </div>
-                    </div>
-                    <i class="bi bi-plus" onclick="addToCart(this, 3);"></i>
-                </div>
-            </div>
+            <i class="bi bi-plus" onclick="addToCart(this, 1);"></i>
+          </div>
         </div>
+        <div class="product">
+          <img
+            class="product-img"
+            src="https://www.alanic.clothing/v1/wp-content/uploads/2021/04/men-fashion-casual-streetwear-t-shirt.jpg"
+          />
+          <div class="price-info">
+            <div>
+              <p class="product-title">STAY FREE TEE</p>
+              <div class="prices">
+                <p class="old-price">$41.98</p>
+                <p class="price">$36.98</p>
+              </div>
+            </div>
+            <i class="bi bi-plus" onclick="addToCart(this, 2);"></i>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            class="product-img"
+            src="https://flavnt.com/cdn/shop/products/dogoodsoc.jpg?v=1673671478&width=713"
+          />
+          <div class="price-info">
+            <div>
+              <p class="product-title">DO GOOD SOCIAL CLUB TEE</p>
+              <div class="prices">
+                <p class="old-price">$38.80</p>
+                <p class="price">$34.80</p>
+              </div>
+            </div>
+            <i class="bi bi-plus" onclick="addToCart(this, 3);"></i>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="/src/JS/index.js"></script>
-</body>
+  </body>
 </html>
