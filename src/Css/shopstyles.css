@@ -95,7 +95,11 @@ a{
     align-items: center;
     font-size: 1.5rem;
     margin-left: auto;
-
+    cursor: pointer;
+}
+.bi-plus:hover{
+    background-color: black;
+    color: white;
 }
 .old-price{
     text-decoration: line-through;
@@ -106,4 +110,24 @@ a{
 }
 .price{
     margin-left: 0.5rem;
+}
+.addedborder{
+    background-color: blue;
+}
+@media (max-width:850px){
+    .product {
+        width: 100%;
+    }
+    .products-container {
+        row-gap: 1rem;
+    }
+    .header {
+        grid-template-columns: 7fr 2fr 1fr;
+    }
+    .product-img {
+        width: 100%;
+    }
+    .price-info {
+        width: 21rem;
+    }
 }

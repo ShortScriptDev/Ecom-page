@@ -4,7 +4,6 @@ let total = 0;
 let orderIndex = 0;
 let productId = 0;
 
-
 function updateCartCount() {
     var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     var cartCountElement = document.querySelector('.cart-count');
@@ -48,6 +47,8 @@ function addToCart(addedItem, productId) {
   let itemImage = parentOfParent.querySelector(".product-img");
   let productImage = itemImage.src;
   
+  let addBtn = parentE.querySelector(".bi-plus")
+  addBtn.classList.add('addedborder')
   //Got product price
   let itemPrice = parentE.querySelector(".price");
   let productPrice = itemPrice.innerHTML;
@@ -88,12 +89,6 @@ function addToCart(addedItem, productId) {
 // cart functions
 // add item to cart
 function removeProduct(productId) {
-  // Log the current state of the cartItems before removal
-  console.log(
-    "Cart in Local Storage (Before Removal):",
-    JSON.parse(localStorage.getItem("cart"))
-  );
-
   // Get the cartItems from localStorage
   var cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -114,12 +109,6 @@ function removeProduct(productId) {
 
     // Update the localStorage with the modified cartItems array
     localStorage.setItem("cart", JSON.stringify(cartItems));
-
-    // Log the updated state of the cartItems after modification
-    console.log(
-      "Cart in Local Storage (After Modification):",
-      JSON.parse(localStorage.getItem("cart"))
-    );
 
     //Update changes for each function
     displayCart();

@@ -173,7 +173,11 @@ a{
     align-items: center;
     font-size: 1.5rem;
     margin-left: auto;
-
+    cursor: pointer;
+}
+.bi-plus:hover{
+    background-color: black;
+    color: white;
 }
 .old-price{
     text-decoration: line-through;
